@@ -22,6 +22,10 @@ public class Car {
         this.suspension = suspension;
     }
 
+    public Car(){
+
+    }
+
 
     @Override
     public String toString() {
