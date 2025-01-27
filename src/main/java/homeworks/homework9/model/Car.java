@@ -12,7 +12,14 @@ public class Car {
     private int suspension;
 
 
-    public Car() {
+    public Car(String brand, String model, Integer release, Integer HP, Integer acceleration, Integer durability, Integer suspension) {
+        this.brand = brand;
+        this.model = model;
+        this.release = release;
+        this.HP = HP;
+        this.acceleration =acceleration;
+        this.durability = durability;
+        this.suspension = suspension;
     }
 
 
