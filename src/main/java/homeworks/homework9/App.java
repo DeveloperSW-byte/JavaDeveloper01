@@ -20,6 +20,7 @@ public class App {
         garage.parkCar(perfomanceCar);
         garage.parkCar(showCar);
 
+        garage.showParkedCars();
 
 
 
