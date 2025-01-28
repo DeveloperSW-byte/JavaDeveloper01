@@ -14,5 +14,15 @@ public class Garage {
         System.out.println("Машина " + car.getBrand() + " " + car.getModel() + " припаркована в гараже.");
     }
 
+    public void showParkedCars(){
+        if (parkedCars.isEmpty()){
+            System.out.println("Гараж пуст");
+        } else {
+            System.out.println("Список машин припаркованных в гараже");
+            for (Car car : parkedCars){
+                System.out.println(car);
+            }
+        }
     }
 }
+
