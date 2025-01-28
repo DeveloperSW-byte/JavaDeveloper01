@@ -25,4 +25,9 @@ public class ShowCar extends Car{
         }
         this.stars = stars;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", stars=" + stars;
+    }
 }
