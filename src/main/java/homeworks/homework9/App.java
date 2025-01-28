@@ -13,6 +13,11 @@ public class App {
         PerfomanceCar perfomanceCar = new PerfomanceCar("Audi", "RS6", 2024, 425, 230, 2200, 200);
         ShowCar showCar = new ShowCar("Mazda", "RX-7", 1978, 900, 200, 4000, 100, 50);
 
+        garage.parkCar(car);
+        garage.parkCar(car1);
+        garage.parkCar(car2);
+        garage.parkCar(perfomanceCar);
+        garage.parkCar(showCar);
 
 
 
