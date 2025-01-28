@@ -5,6 +5,12 @@ public class ShowCar extends Car{
 
     public ShowCar (String brand, String model, Integer release, Integer HP, Integer acceleration, Integer durability, Integer suspension, Integer stars){
         super(brand, model, release, HP, acceleration, durability, suspension);
+        if (stars <= 0) {
+            System.out.println("Maaan, you car so ugly");
+        }
+        if (stars > 0) {
+            System.out.println("Looking cool there, bro.");
+        }
         this.stars = stars;
 
     }
