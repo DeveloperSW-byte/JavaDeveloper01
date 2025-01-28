@@ -6,6 +6,7 @@ import homeworks.homework9.model.ShowCar;
 
 public class App {
     public static void main (String [ ] args) {
+        Garage garage = new Garage();
 
         Car car = new Car("BMW", "M5", 2020, 250, 200, 2000, 200);
         Car car1 = new Car ("Porsche", "GT6", 2019, 280, 225, 2250, 180);
