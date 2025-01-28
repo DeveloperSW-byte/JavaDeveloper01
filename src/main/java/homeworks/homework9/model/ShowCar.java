@@ -20,6 +20,9 @@ public class ShowCar extends Car{
     }
 
     public void setStars(int stars) {
+        if (stars <= 0) {
+            System.out.println("Maaan, you car so ugly");
+        }
         this.stars = stars;
     }
 }
