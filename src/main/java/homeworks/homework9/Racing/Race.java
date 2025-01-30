@@ -9,7 +9,8 @@ public class Race {
     private int reward;
     String [] racers;
 
-    public Race(Integer length, String route, Integer reward) {
+    public Race(Integer length, String route, Integer reward, Object racers) {
+        this.racers = new ArrayList<>();
     }
 
     public void racers (Car car){
