@@ -12,8 +12,9 @@ public class Race {
     public Race(Integer length, String route, Integer reward) {
     }
 
-    public String[] getRacers() {
-        return racers;
+    public void racers (Car car){
+        racers.add(car);
+        System.out.println("Машина " + car.getBrand() + " " + car.getModel() + "участвует в гонке");
     }
 
     public void setRacers(String[] racers) {
