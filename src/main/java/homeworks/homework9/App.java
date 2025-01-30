@@ -23,6 +23,16 @@ public class App {
         garage.showParkedCars();
 
 
+        Race race = new Race(800, "middle-factory", 2500);
+        CasualRace casualRace = new CasualRace(1200, "middle", 1200);
+        DragRace dragRace = new DragRace(500, "Airport", 2000);
+        DriftRace driftRace = new DriftRace(800, "Docs", 3000);
+
+        
+
+
+
+
 
     }
 }
