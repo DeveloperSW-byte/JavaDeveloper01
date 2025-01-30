@@ -7,7 +7,7 @@ public class Race {
     private int length;
     private String route;
     private int reward;
-    String [] racers;
+    private List<Car> racers;
 
     public Race(Integer length, String route, Integer reward, Object racers) {
         this.racers = new ArrayList<>();
