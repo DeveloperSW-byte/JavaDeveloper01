@@ -18,8 +18,23 @@ public class Race {
         System.out.println("Машина " + car.getBrand() + " " + car.getModel() + "участвует в гонке");
     }
 
-    public void setRacers(String[] racers) {
-        this.racers = racers;
+    public void showRacers() {
+        if (racers.isEmpty()) {
+            System.out.println("Гараж пуст ");
+        } else {
+            System.out.println("Список гонщиков ");
+            for (Car car : racers) {
+                System.out.println(car);
+            }
+        }
+    }
+
+    public void winner(List<Car> racers, int hpThreshold) {
+        for (Car car : racers) {
+            if (car.getHP() > hpThreshold) {
+                System.out.println("Машины призеры " + car.getModel());
+            }
+        }
     }
 
     public int getReward() {
