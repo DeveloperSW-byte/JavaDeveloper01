@@ -1,6 +1,11 @@
 package homeworks.homework9.Racing;
 
+import homeworks.homework05Addition.TV;
+import homeworks.homework9.model.Car;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 
 public class Race {
@@ -11,6 +16,10 @@ public class Race {
 
     public Race(Integer length, String route, Integer reward, Object racers) {
         this.racers = new ArrayList<>();
+        this.length = length;
+        this.route = route;
+        this.reward = reward;
+
     }
 
     public void racers (Car car){
@@ -54,6 +63,18 @@ public class Race {
         System.out.println("Победитель" + mostPowerfulCar);
     }
 
+    public void mostDriftCar(List <Car> cars){
+        Car mostDriftCar = cars.get(0);
+
+        for (Car car : cars){
+            if (car.getSuspension() < mostDriftCar.getSuspension()){
+                mostDriftCar = car;
+            }
+        }
+        System.out.println("Победитель " + mostDriftCar);
+
+    }
+
     public int getReward() {
         return reward;
     }
@@ -85,18 +106,14 @@ public class Race {
         return length == race.length && reward == race.reward && Objects.equals(route, race.route) && Objects.deepEquals(racers, race.racers);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(length, route, reward, Arrays.hashCode(racers));
-    }
 
     @Override
     public String toString() {
         return "Race{" +
-                "length=" + length +
-                ", route='" + route + '\'' +
+                "racers=" + racers +
                 ", reward=" + reward +
-                ", racers=" + Arrays.toString(racers) +
+                ", route='" + route + '\'' +
+                ", length=" + length +
                 '}';
     }
 

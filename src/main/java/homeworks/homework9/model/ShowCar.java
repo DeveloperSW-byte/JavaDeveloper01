@@ -1,9 +1,9 @@
 package homeworks.homework9.model;
 
-public class ShowCar extends Car{
+public class ShowCar extends Car {
     private int stars = 0;
 
-    public ShowCar (String brand, String model, Integer release, Integer HP, Integer acceleration, Integer durability, Integer suspension, Integer stars){
+    public ShowCar(String brand, String model, Integer release, Integer HP, Integer acceleration, Integer durability, Integer suspension, Integer stars) {
         super(brand, model, release, HP, acceleration, durability, suspension);
         if (stars <= 0) {
             System.out.println("Maaan, you car so ugly");

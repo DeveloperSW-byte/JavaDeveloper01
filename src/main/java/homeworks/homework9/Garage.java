@@ -2,6 +2,9 @@ package homeworks.homework9;
 
 import homeworks.homework9.model.Car;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Garage {
     private List<Car> parkedCars;
 

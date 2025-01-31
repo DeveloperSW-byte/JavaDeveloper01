@@ -1,5 +1,6 @@
 package homeworks.homework9;
 
+import homeworks.homework9.Racing.*;
 import homeworks.homework9.model.Car;
 import homeworks.homework9.model.PerfomanceCar;
 import homeworks.homework9.model.ShowCar;
@@ -27,6 +28,8 @@ public class App {
         CasualRace casualRace = new CasualRace(1200, "middle", 1200, 5);
         DragRace dragRace = new DragRace(500, "Airport", 2000, 2);
         DriftRace driftRace = new DriftRace(800, "Docs", 3000, 2);
+        TimeLimitRace timeLimitRace = new TimeLimitRace(1000, "Yokohama", 2800, 5, 5);
+        CircuitRace circuitRace = new CircuitRace(4000, "NASA AIRPORT", 10000, 10, 50);
 
         race.racers(car);
         race.racers(car1);
@@ -48,6 +51,9 @@ public class App {
         System.out.println(driftRace);
         driftRace.mostDriftCar(race.getRacers());
 
+        System.out.println("Доп.гонки");
+        System.out.println(timeLimitRace);
+        System.out.println(circuitRace);
 
 
 
@@ -56,7 +62,8 @@ public class App {
 
 
 
-        
+
+
 
 
 
