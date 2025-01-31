@@ -37,6 +37,23 @@ public class Race {
         }
     }
 
+    public void findMostPowerfulCar(List< Car > cars) {
+        if (cars.isEmpty()) {
+            System.out.println("Список машин пуст.");
+            return;
+        }
+
+        Car mostPowerfulCar = cars.get(0);
+
+        for (Car car : cars) {
+            if (car.getHP() > mostPowerfulCar.getHP()) {
+                mostPowerfulCar = car;
+            }
+        }
+
+        System.out.println("Победитель" + mostPowerfulCar);
+    }
+
     public int getReward() {
         return reward;
     }
