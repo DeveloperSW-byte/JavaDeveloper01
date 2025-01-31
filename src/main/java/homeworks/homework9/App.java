@@ -31,6 +31,8 @@ public class App {
         race.racers(car);
         race.racers(car1);
         race.racers(car2);
+        race.racers(perfomanceCar);
+        race.racers(showCar);
         race.showRacers();
 
 
