@@ -99,4 +99,12 @@ public class Race {
                 ", racers=" + Arrays.toString(racers) +
                 '}';
     }
+
+    public List<Car> getRacers() {
+        return racers;
+    }
+
+    public void setRacers(List<Car> racers) {
+        this.racers = racers;
+    }
 }
