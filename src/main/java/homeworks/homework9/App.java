@@ -35,6 +35,24 @@ public class App {
         race.racers(showCar);
         race.showRacers();
 
+        System.out.println("Машины призёры");
+        System.out.println(race);
+        System.out.println(casualRace);
+        race.winner(race.getRacers(), 200);
+
+        System.out.println("Самый мощный драг!!!");
+        System.out.println(dragRace);
+        dragRace.findMostPowerfulCar(race.getRacers());
+
+        System.out.println("Дрифт!!!");
+        System.out.println(driftRace);
+        driftRace.mostDriftCar(race.getRacers());
+
+
+
+
+
+
 
 
 
