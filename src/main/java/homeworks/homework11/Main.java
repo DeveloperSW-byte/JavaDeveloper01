@@ -7,7 +7,7 @@ public class Main {
         Car car1 = new Car(00001, "FORD", "RED", 20000, 15000);
 
 
-        System.out.println(car1.getNumber() +  " Новая машина " +car1.getModel() + " Цвет машины " +
+        System.out.println("Номер машины " + car1.getNumber() +  " Новая машина " +car1.getModel() + " Цвет машины " +
                 car1.getColor() + " Пробег " +
                 car1.getMileage() + " Цена " +
                 car1.getCost());
