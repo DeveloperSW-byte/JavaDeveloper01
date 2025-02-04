@@ -11,7 +11,11 @@ public class Pair<i, s> {
         return second;
     }
 
-    private Pair(F first, S second){
+    public i getFirst() {
+        return first;
+    }
+
+    private Pair(i first, s second){
         this.first = first;
         this.second = second;
     }
