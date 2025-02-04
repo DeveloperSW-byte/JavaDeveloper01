@@ -20,7 +20,7 @@ public class Pair<i, s> {
         this.second = second;
     }
 
-    public static <F, S> Pair<F, S> of(F first, S second){
+    public static <i, s> Pair<i, s> of(i first, s second){
         return new Pair<>(first, second);
     }
 
