@@ -5,7 +5,11 @@ import java.util.Objects;
 public class Pair<i, s> {
     private final i first;
 
-    private final S second;
+    private final s second;
+
+    public s getSecond() {
+        return second;
+    }
 
     private Pair(F first, S second){
         this.first = first;
