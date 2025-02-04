@@ -3,25 +3,24 @@ package homeworks.homework11;
 import java.util.Objects;
 
 public class Car {
-    int number;
+    String number;
     String model;
     String color;
     int mileage;
     int cost;
 
-    public Car(int number, String model, String color, int mileage, int cost) {
+    public Car(String number, String model, String color, int mileage, int cost) {
         this.number = number;
         this.model = model;
         this.color = color;
         this.mileage = mileage;
         this.cost = cost;
     }
-
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
@@ -58,21 +57,10 @@ public class Car {
     }
 
     @Override
-    public String toString() {
-        return "Car{" +
-                "number=" + number +
-                ", model='" + model + '\'' +
-                ", color='" + color + '\'' +
-                ", mileage=" + mileage +
-                ", cost=" + cost +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return number == car.number && mileage == car.mileage && cost == car.cost && Objects.equals(model, car.model) && Objects.equals(color, car.color);
+        return mileage == car.mileage && cost == car.cost && Objects.equals(number, car.number) && Objects.equals(model, car.model) && Objects.equals(color, car.color);
     }
 
     @Override
