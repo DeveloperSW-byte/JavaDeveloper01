@@ -2,8 +2,8 @@ package homeworks.homework10addition;
 
 import java.util.Objects;
 
-public class Pair<F, S> {
-    private final F first;
+public class Pair<i, s> {
+    private final i first;
 
     private final S second;
 
