@@ -6,8 +6,6 @@ public class App {
 
     public static void main(String[] args) {
 
-        Optional<String> optionalS = Optional.of(null);
-
         Pair<Integer, String> pair = Pair.of(1, "hello");
         Integer i = pair.getFirst();
         String s = pair.getSecond();
