@@ -35,4 +35,30 @@ public class App {
             readFromFile("persons.txt");
         }
     }
+    public static void saveToFile(List<Person> persons, String Persons) {//Создание метода для записи в файл
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter(Persons))) {
+            for (Person person : persons) {
+                writer.write("<" + person.getLastName()+ ">"+ "<" + person.getFirstName()+ ">" + "<" + person.getMiddleName()+ ">" + "<" + person.getBD()+ ">" + "<"
+                        + person.getNumberPh()+ ">" + "<" + person.getSex()+ ">"+ "<" + person.getAge()+ ">" );
+                writer.newLine();
+            }
+            System.out.println("Данные успешно записаны в " + Persons);
+        } catch (IOException e){
+            System.out.println("Ошибка записи в файл: " + Persons);
+        }
+    }
+
+    public static void readFromFile(String Person){//Создание метода для чтения файла
+        try(BufferedReader reader = new BufferedReader(new FileReader(Person))) {
+            String line;
+            while ((line = reader.readLine()) !=null){
+                System.out.println(line);
+            }
+        }catch (IOException e){
+            System.out.println("Ошибка при чтении файла" + e.getMessage());
+        }
+    }
+
+
+
 }
