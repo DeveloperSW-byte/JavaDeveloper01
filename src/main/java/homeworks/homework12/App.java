@@ -34,6 +34,12 @@ public class App {
 //        }
 
 
+            // Запись в файл
+            saveToFile(persons, "persons.txt");
+
+            // Чтение из файла и вывод
+            System.out.println("\nСписок людей из файла:");
+            readFromFile("persons.txt");
         }
     }
 }
