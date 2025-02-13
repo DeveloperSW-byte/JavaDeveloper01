@@ -27,10 +27,11 @@ public class Main {
         Car car9 = new Car("I097df", "Toyota", "black", 108000, 780000);
         Car car10 = new Car("y876wd", "Toyota", "Black", 160000, 1000000);
 
-        System.out.println("Номер машины " + car1.getNumber() +  " Новая машина " +car1.getModel() + " Цвет машины " +
-                car1.getColor() + " Пробег " +
-                car1.getMileage() + " Цена " +
-                car1.getCost());
+        System.out.println("Первый авто ");
+        System.out.println("Номер машины " + cars[0].getNumber() +  " Новая машина " +cars[0].getModel() + " Цвет машины " +
+                cars[0].getColor() + " Пробег " +
+                cars[0].getMileage() + " Цена " +
+                cars[0].getCost());
 
 
 
