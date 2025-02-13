@@ -1,4 +1,4 @@
-package homeworks.homework11;
+package homeworks.homework11addition.model;
 
 import java.util.Objects;
 

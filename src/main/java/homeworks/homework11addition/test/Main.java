@@ -1,8 +1,9 @@
-package homeworks.homework11;
+package homeworks.homework11addition.test;
+
+import homeworks.homework11addition.model.Car;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main {
 
@@ -35,21 +36,21 @@ public class Main {
         List<String> numbers = Arrays.stream(cars)
                 .filter(car -> car.getColor().equalsIgnoreCase("black") || car.getColor().equalsIgnoreCase("white"))
                         .map(Car::getNumber)
-                        .collect(Collectors.toList()); //Сортировка автомобилей по цвету
+                        .collect(Collectors.toList());
 
-        System.out.println("Номера автомобилей   по   цвету " + numbers); //вывод номеров автомобилей по цвету, заданное по условиям задачи
+        System.out.println("Номера автомобилей   по   цвету " + numbers);
 
         long uniqueCarsCount = Arrays.stream(cars)
                 .map(Car::getModel)
                 .distinct()
-                .count();// подсчёт уникалтных моделей авто
+                .count();
 
-        System.out.println("Уникальные автомобили: " + uniqueCarsCount + " шт.");// подсчёт уникалтных моделей авто
+        System.out.println("Уникальные автомобили: " + uniqueCarsCount + " шт.");
 
         Optional<Car> minCostcar = Arrays.stream(cars)
                 .min(Comparator.comparing(Car::getCost));
 
-        minCostcar.ifPresent(car -> System.out.println("Цвет автомобиля с минимальной стоимостью: " + car.getColor()));//получние цвета авто с минимальной стоимостью
+        minCostcar.ifPresent(car -> System.out.println("Цвет автомобиля с минимальной стоимостью: " + car.getColor()));
 
 
         OptionalDouble midCostToyota = Arrays.stream(cars)
@@ -58,7 +59,7 @@ public class Main {
                 .average();// Находим среднее значение
 
                 if (midCostToyota.isPresent()) {
-                    System.out.println("Средняя цена автомобилей Toyota: " + (int) midCostToyota.getAsDouble() + " руб "); //поиск средней цены автомобилей тойота
+                    System.out.println("Средняя цена автомобилей Toyota: " + (int) midCostToyota.getAsDouble() + " руб ");
                 } else {
                     System.out.println("Таких машин нет");
                 }
