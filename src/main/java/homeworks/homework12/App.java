@@ -23,15 +23,8 @@ public class App {
             person.setAge();
             persons.add(person);
 
-//            System.out.println("<" + person.getLastName()+ ">"+ "<" + person.getFirstName()+ ">" + "<" + person.getMiddleName()+ ">" + "<" + person.getBD()+ ">" + "<"
-//                    + person.getNumberPh()+ ">" + "<" + person.getSex()+ ">"+ "<" + person.getAge()+ ">" );
-//            // Запись в файл
-//            saveToFile(persons, "persons.txt");
-//
-//            // Чтение из файла и вывод
-//            System.out.println("\nСписок людей из файла:");
-//            readFromFile("persons.txt");
-//        }
+            System.out.println("<" + person.getLastName()+ ">"+ "<" + person.getFirstName()+ ">" + "<" + person.getMiddleName()+ ">" + "<" + person.getBD()+ ">" + "<"
+                    + person.getNumberPh()+ ">" + "<" + person.getSex()+ ">"+ "<" + person.getAge()+ ">" );
 
 
             // Запись в файл
