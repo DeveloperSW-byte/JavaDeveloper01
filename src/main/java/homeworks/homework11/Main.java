@@ -33,6 +33,10 @@ public class Main {
                 cars[0].getMileage() + " Цена " +
                 cars[0].getCost());
 
+        System.out.println("Все автомобили ");
+        for (Car car : cars) {
+            System.out.println(car);
+        }
 
 
 
